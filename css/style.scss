@@ -1,0 +1,247 @@
+@font-face {
+    font-family: "Dosis";
+    src: url(/fonts/Dosis-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Dosis Bold";
+    src: url(/fonts/Dosis-Bold.ttf);
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src: url(/fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: "OpenSans Bold";
+    src: url(/fonts/OpenSans-Bold.ttf);
+}
+
+body {
+    font-family: "Dosis";
+    overflow-y: hidden;
+    .navbar-section {
+        width: 100%;
+        color: #fff;
+        position: absolute;
+        z-index: 10;
+    }
+    .header-section {
+        color: #fff;
+        min-height: 100vh;
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/images/magazyny-produktow-i-uslug-faktury-online.jpg');
+        background-position: center;
+        background-size: cover;
+
+        .page-header {
+            h2 {
+                font-size: 50px;
+            }
+        }
+        .btn {
+            border-radius: 10rem;
+            padding: 10px 38px 10px;
+            font-size: 13px;
+            text-transform: uppercase;
+            color: #fff;
+            margin: 30px;
+            margin-left: 0;
+            font-family: "OpenSans Bold";
+            &-green {
+                background-color: #3cd458;
+                border-color: #3cd458;
+                &:hover {
+                    background-color: #28a745;
+                }
+            }
+            &-transparent {
+                background-color: transparent;
+                border-color: #f8f9fa;
+                &:hover {
+                    background-color: #fff;
+                    color: rgba(0, 0, 0, 0.7);
+                }
+            }
+        }
+   
+        .image-blocks img {
+            border-radius: 0.25rem;
+            width: 220px;
+            max-height: 170px;
+            object-fit: cover;
+            object-position: top;
+
+        }
+
+        .image-blocks a {
+    
+            position: absolute;
+            opacity: 0.7;
+            border: 1px solid rgba(255, 255, 255, 0);
+       
+            z-index: 1;
+        }
+        .image-blocks a:hover {
+            opacity: 1 !important;
+            -webkit-transition: 0.7s !important;
+            transition: 0.7s !important;
+            border: 1px solid 	#A0A0A0;
+             border-radius: 0.25rem;
+            z-index: 11;
+        }
+
+
+        .image-blocks a:nth-child(1) {
+            -webkit-animation: imagesAnimation 4s infinite;
+            animation: imagesAnimation 4s infinite;
+            right: 15px;
+            bottom: -20px;
+
+
+        }
+
+        .image-blocks a:nth-child(2) {
+            -webkit-animation: imagesAnimation 8s infinite;
+            animation: imagesAnimation 8s infinite;
+            right: 280px;
+            bottom: 30px;
+
+        }
+
+        .image-blocks a:nth-child(3) {
+            -webkit-animation: imagesAnimation 5s infinite;
+            animation: imagesAnimation 5s infinite;
+            right: 0px;
+            bottom: 190px;
+        }
+
+        .image-blocks a:nth-child(4) {
+            -webkit-animation: imagesAnimation 6s infinite;
+            animation: imagesAnimation 6s infinite;
+            right: 250px;
+            bottom: 180px;
+        }
+
+        .image-blocks a:nth-child(5) {
+            -webkit-animation: imagesAnimation 9s infinite;
+            animation: imagesAnimation 9s infinite;
+            right: 270px;
+            bottom: 320px;
+        }
+
+        .image-blocks a:nth-child(6) {
+            -webkit-animation: imagesAnimation 7s infinite;
+            animation: imagesAnimation 7s infinite;
+            right: 20px;
+            bottom: 370px;
+        }
+
+        .image-blocks a:nth-child(7) {
+            -webkit-animation: imagesAnimation 5s infinite;
+            animation: imagesAnimation 5s infinite;
+            right: 200px;
+            bottom: 470px;
+        }
+
+        .image-blocks a:nth-child(8) {
+            -webkit-animation: imagesAnimation 8s infinite;
+            animation: imagesAnimation 8s infinite;
+            right: 10px;
+            bottom: 470px;
+        }
+
+        .image-blocks a:nth-child(9) {
+            -webkit-animation: imagesAnimation 9s infinite;
+            animation: imagesAnimation 9s infinite;
+            right: 0px;
+            bottom: 570px;
+            transform: scale(1.1);
+        }
+
+
+
+
+    }
+    .more-section{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        .card{
+            .card-img-top{
+                height: 200px;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+    }
+}
+
+.text-bold {
+    font-family: "Dosis Bold";
+}
+
+@media screen and (max-width:768px) {
+    .page-header {
+        .btn {
+            display: block;
+            margin: 40px !important;
+        }
+    }
+}
+
+@media screen and (max-width:576px) {
+    .navbar-brand {
+        h3 {
+            font-size: 20px;
+        }
+    }
+    .header-section {
+        .page-header {
+            h2 {
+                font-size: 36px !important;
+            }
+            h3 {
+                font-size: 16px !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:370px) {
+    .navbar-brand {
+        h3 {
+            font-size: 16px;
+        }
+    }
+
+}
+
+@-webkit-keyframes imagesAnimation {
+    0% {
+        -webkit-transform: rotate(-0.5deg) translate(-2px, -2px);
+        transform: rotate(-0.5deg) translate(-2px, -2px);
+    }
+    50% {
+        -webkit-transform: rotate(0.5deg) translate(2px, 2px);
+        transform: rotate(1deg) translate(2px, 2px);
+    }
+    100% {
+        -webkit-transform: rotate(-0.5deg) translate(-2px, -2px);
+        transform: rotate(-0.5deg) translate(-2px, -2px);
+    }
+}
+
+@keyframes imagesAnimation {
+    0% {
+        -webkit-transform: rotate(-0.5deg) translate(-2px, -2px);
+        transform: rotate(-0.5deg) translate(-2px, -2px);
+    }
+    50% {
+        -webkit-transform: rotate(0.5deg) translate(2px, 2px);
+        transform: rotate(0.5deg) translate(2px, 2px);
+    }
+    100% {
+        -webkit-transform: rotate(-0.5deg) translate(-2px, -2px);
+        transform: rotate(-0.5deg) translate(-2px, -2px);
+    }
+}
